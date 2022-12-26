@@ -914,6 +914,7 @@
         box-sizing: border-box;
     }
     .cont3_list img{
+        width: 100%;
         padding-left:10px;
     }
     .cont3_more{
