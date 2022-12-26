@@ -915,6 +915,7 @@
     }
     .cont3_list img{
         width: 100%;
+        max-width: 300px;
         padding-left:10px;
     }
     .cont3_more{
