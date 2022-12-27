@@ -911,13 +911,18 @@
     }
     .cont3_list{
         width: 100%;
-        float: left;
-        box-sizing: border-box;
+        height: auto;
+        margin: auto;
+    }
+    .cont3_list li{
+        width: 100%;
+        height: auto;
+        margin: auto;
     }
     .cont3_list img{
         width: 100%;
-        max-width: 300px;
-        padding-left:10px;
+        max-width: 400px;
+        padding: 0 40px;
     }
     .cont3_more{
         width: 100px;
