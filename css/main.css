@@ -799,7 +799,7 @@
     .cont1_wrap h2{
         margin: auto;
         text-align: center;
-        padding: 40px 40px 60px 40px;
+        padding: 40px 0;
         font-size: 40px;
     }
     .cont1_wrap .left{
