@@ -1,0 +1,247 @@
+form{
+    width: 1200px;
+    height: 1600px;
+    margin: auto;
+    position: relative;
+}
+
+fieldset{
+    width: 1000px;
+    border: none;
+    /* border: 1px solid red; */
+    margin:auto;
+    /* border: 1px solid blue; */
+}
+.u_name .err_txt{
+    width:300px; 
+    font-size: 12px; 
+    color: red; 
+    padding-right:180px; 
+    position: absolute;
+    left: 290px;
+    top: 268px;
+}
+.u_id .err_txt{
+    width:300px; 
+    font-size: 12px; 
+    color: red; 
+    padding-right:180px; 
+    position: absolute;
+    left: 290px;
+    top: 354px;
+}
+.u_pwd .err_txt{
+    width:300px; 
+    font-size: 12px; 
+    color: red; 
+    padding-right:180px; 
+    position: absolute;
+    left: 290px;
+    top: 438px;
+}
+.re_pwd .err_txt{
+    width:300px; 
+    font-size: 12px; 
+    color: red; 
+    padding-right:180px; 
+    position: absolute;
+    left: 290px;
+    top: 520px;
+}
+.mobile .err_txt{
+    width:300px; 
+    font-size: 12px; 
+    color: red; 
+    padding-right:180px; 
+    position: absolute;
+    left: 290px;
+    top: 602px;
+}
+
+.dsp_txt{
+    font-size: 16px;
+}
+
+legend{
+    padding: 80px 0 60px 0;
+    font-size: 40px;
+    text-align: center;
+}
+
+.c_title{
+    width: 140px;
+    padding:27px 20px;
+    font-size:18px;
+    font-weight: bold;
+    /* background-color: #f3f3f3; */
+    display: inline-block;
+    /* text-align: center; */
+}
+h3{
+    font-size: 24px;
+}
+form div{
+    border-bottom: 1px solid #cbcbcb;
+    font-size:18px;
+    font-weight:normal;
+}
+.mobile{
+    border-top: 1px solid #cbcbcb;
+}
+.log_info{
+    width: 700px;
+    margin: 16px 0 60px 0;
+    border-top: 2px solid orange;
+    border-bottom: 2px solid orange;
+}
+.m_info{
+    width: 700px;
+    margin: 16px 0 50px 0;
+    border-top: 2px solid orange;
+    border-bottom: 2px solid orange;
+}
+label{
+    font-size:18px;
+}
+.apply label{
+    font-size:18px;
+    display: block;
+    padding-left: 50px;
+    padding-bottom: 20px;
+}
+.apply p{
+    padding: 20px;
+}
+
+input{
+    width: 300px;
+    height: 40px;
+    font-size: 20px;
+    margin: 18px 0;
+    border: 1px solid #ebe9e9;
+    border-radius: 5px;
+    vertical-align: middle;
+}
+.re_pwd{
+    border: none;
+}
+.birth span{
+    font-size: 14px;
+    position: absolute;
+    top:660px;
+    left:600px
+}
+
+#email_id{
+    width: 220px;
+}
+#email_dns{
+    width: 160px;
+}
+#email_sel{
+    width: 80px;
+    height: 40px;
+}
+#addr_b{
+    width: 600px;
+}
+#addr_d{
+    width: 600px;
+}
+
+input[type=radio]{
+    width: 20px;
+    height: 20px;
+    border: none;
+    margin: 0;
+}
+.gender label{
+    margin-right: 20px;
+}
+
+
+/* .male{
+    width: 100px;
+    height: 50px;
+    border: none;
+    display: inline-block;
+} */
+.male input{
+    margin:0;
+    display:inline;
+}
+/* .female{
+    width: 100px;
+    height: 50px;
+    border: none;
+    display: inline-block;
+
+} */
+input[type=checkbox]{
+    width: 20px;
+    height: 20px;
+    border: none;
+    margin: 0;
+    vertical-align: middle;
+}
+
+button{
+    /* margin-top:50px ; */
+    width: 140px;
+    height: 40px;
+    border: 1px solid #cbcbcb;
+    background-color: #f0f0f0;
+    cursor: pointer;
+    vertical-align: middle;
+}
+
+.fin_bt{
+    text-align: center;
+    padding-top: 50px;
+}
+
+.fin_bt button{
+    width: 180px;
+    height: 44px;
+    border: 1px solid rgb(255, 0, 179);
+    background-color: white;
+    border-radius: 50px;
+    font-size: 20px;
+}
+.fin_bt button[type='submit']{
+    margin-right: 50px;
+}
+button:hover{
+    background-color: rgb(255, 0, 187);
+    color: #ffffff;
+}
+.blueText{font-weight:bold;color:rgb(40, 92, 188)}
+.redText{font-weight:bold;color:rgb(251, 77, 14); font-size: 10px;}
+
+/* .blueText{
+    width:300px; 
+    font-size: 12px; 
+    color:rgb(40, 92, 188);
+    padding-right:180px; 
+    position: absolute;
+    left: 290px;
+    top: 602px;
+} */
+
+/* legend{
+    font-weight: bold;
+    font-size: 40px;
+    text-align: center;
+}
+label{
+    font-size: 18px;
+}
+input{
+    width: 500px;
+    height: 50px;
+    border: 1px solid #cdcdcd;
+    font-size: 20px;
+    margin-bottom: 16px;
+    /* padding: 4px 40px 0 20px; */
+    /* margin-bottom:20px ;
+}*/

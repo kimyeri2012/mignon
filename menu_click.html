@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <link rel="manifest" href="manifest.json">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/menu_click.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="http://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="slick-1.8.1/slick/slick.css"/>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="slick-1.8.1/slick/slick.js"></script>
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Capriola&display=swap" rel="stylesheet"> -->
+    <link href="https://fonts.googleapis.com/css2?family=Capriola&family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+    <title>Document</title>
+    <script type="text/javascript">
+        $(document).ready(function () {
+
+            $(".gnb_1 >ul").hide();
+
+            $(".gnb>ul").mouseover(function () {
+                $(this).find("ul").stop().slideDown("fast");
+            })
+            $(".gnb>ul").mouseout(function () {
+                $(this).find("ul").stop().slideUp("fast");
+            })
+        })
+        
+    </script>
+</head>
+<body>
+    <header id="header" >
+        <div class="head_wrap">
+            <h1 class="logo" id="logo"><a href="">cafemignon</a></h1>
+                <nav class="gnb" id="gnb">
+                    <span class="menu_icon"><a href="#"> menu</a></span>
+                    <ul class="gnb_hide">
+                        <li class="gnb_1 first"><a href="#">브랜드 소개</a>
+                            <ul class="gnb_2">
+                                <li><a href="#">회사소개</a></li>
+                                <li><a href="#">브랜드스토리</a></li>
+                                <li><a href="#">BI소개</a></li>
+                                <li><a href="#">제조사업</a></li>
+                            </ul>
+                        </li>
+                        <li class="gnb_1" ><a href="#">메뉴</a>
+                            <ul class="gnb_2">
+                                <li><a href="#">키쉬</a></li>
+                                <li><a href="#">커피</a></li>
+                                <li><a href="#">베버리지</a></li>
+                                <li><a href="#">티</a></li>
+                            </ul>
+                        </li>
+                        <li class="gnb_1" ><a href="#">프랜차이즈</a>
+                            <ul class="gnb_2">
+                                <li><a href="#">인테리어</a></li>
+                                <li><a href="#">경쟁력</a></li>
+                                <li><a href="#">개설비용</a></li>
+                                <li><a href="#">가맹문의</a></li>
+                            </ul>
+                        </li>
+                        <li class="gnb_1" ><a href="#">스토어</a>
+                            <ul class="gnb_2">
+                                <li><a href="#">매장찾기</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+        </div>
+    </header>
+    <div class="main">
+        
+
+
+    </div>
+    
+</body>
+</html>

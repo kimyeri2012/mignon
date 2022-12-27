@@ -95,6 +95,15 @@
 					}
 				]
             });
+            $('.cont3_slick').slick({
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                autoplay: true,
+                autoplaySpeed: 2000,
+                prevArrow: false,
+                nextArrow: false
+            });
+            
             $('.cont4_slick').slick({
                 slidesToShow: 4,
                 slidesToScroll: 1,
@@ -138,7 +147,7 @@
 <body>
     <header id="header" >
         <div class="head_wrap">
-            <h1 class="logo" id="logo"><a href="">cafemignon</a></h1>
+            <h1 class="logo" id="logo"><a href="./index.html">cafemignon</a></h1>
                 <nav class="gnb" id="gnb">
                     <span class="menu_icon"><a href="#"> menu</a></span>
                     <ul class="gnb_hide">
@@ -207,7 +216,6 @@
                     <div class="right_img">
                         <img src="./images/카페미뇽_10.jpg" alt="">
                     </div>
-
                 </div>
             </div>
 
@@ -225,13 +233,13 @@
         
                 <div id="tab-1" class="tab-content current">
                     <ul id="tab_1" class="tab_content current cont2_1_1 cont2_slick">
-                        <li class="list_1"><a href="#"><img src="images/Untitled-22.png" alt=""></a></li>
-                        <li class="list_2"><a href="#"><img src="images/3.png" alt=""></a></li>
-                        <li class="list_3"><a href="#"><img src="images/4.png" alt=""></a></li>
-                        <li class="list_4"><a href="#"><img src="images/5.png" alt=""></a></li>
-                        <li class="list_5"><a href="#"><img src="images/6.png" alt=""></a></li>
-                        <li class="list_6"><a href="#"><img src="images/7.png" alt=""></a></li>
-                        <li class="list_7"><a href="#"><img src="images/8.png" alt=""></a></li>
+                        <li class="list_1"><a href="#"><img src="images/mn_1.png" alt=""></a></li>
+                        <li class="list_2"><a href="#"><img src="images/mn_2.png" alt=""></a></li>
+                        <li class="list_3"><a href="#"><img src="images/mn_3.png" alt=""></a></li>
+                        <li class="list_4"><a href="#"><img src="images/mn_4.png" alt=""></a></li>
+                        <li class="list_5"><a href="#"><img src="images/mn_5.png" alt=""></a></li>
+                        <li class="list_6"><a href="#"><img src="images/mn_6.png" alt=""></a></li>
+                        <li class="list_7"><a href="#"><img src="images/mn_8.png" alt=""></a></li>
                     </ul>
                     <p class="click_mv cont2_more"><a href="./menu.html"> more <span class="mv"> -> </span></a></p>
                 </div>
@@ -253,7 +261,6 @@
                     });
         
                 });
-                
             </script>
             
         </div>
@@ -261,10 +268,10 @@
             <div class="cont3_wrap">
                 <h2>STORE INTERIOR</h2>
         
-                <ul class="cont3_list">
-                    <li><img src="images/Untitled-3.png" alt=""></li>
-                    <li><img src="" alt=""></li>
-                    <li><img src="" alt=""></li>
+                <ul class="cont3_list cont3_slick">
+                    <li><img src="images/inte1.jpg" alt=""></li>
+                    <li><img src="images/inte2.jpeg" alt=""></li>
+                    <!-- <li><img src="" alt=""></li> -->
                 </ul>
                 <div class="textbox">
                     <p class="click_mv cont3_more"><a href="#"> Click <span class="mv"> -> </span></a></p>

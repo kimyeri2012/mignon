@@ -1,5 +1,4 @@
 @media screen and (min-width:1000px){ /*최대크기 넣어주기*/
-
     html{
         background-color: rgb(255, 255, 255);
     }
@@ -23,7 +22,6 @@
     .click_mv a:hover{
         color:#ff0077
     }
-
     .down {
         background-color:#fff;
         -webkit-transition-duration:0.4s;
@@ -46,20 +44,7 @@
         background:url(../images/카페미뇽_03.png) no-repeat ;
         text-indent: -9999px;
     }
-    /* .gnb_wrap{
-        height: 200px;
-        position: relative;
-        margin: auto;
-        border: 1px solid blue;
-    }
-
-    .gnb_1{
-        width: 10%;
-        float: left;
-        text-align: center;
-        padding:30px 30px;
-        border: 1px solid red;
-    } */
+   
     .menu_icon{
         display: none;
     }
@@ -81,8 +66,10 @@
     .gnb ul ul{line-height: 34px; border-collapse:collapse; z-index: 9998;width: 100%; height: 200px; border:0.5px solid #cbcbcb;background-color: white; font-size: 17px;}
     .gnb_1 > a:hover{background-color: #ecdade; color: #ffffff; }
     .gnb:hover{background-color: #ffffff;border-collapse:collapse; }
-
-
+/* =================================================================
+=====================================================================
+==========================================
+====================================================== */
     .main{
         width: 100%;
         margin: auto;
@@ -99,9 +86,6 @@
         width: 100%;
         height: 760px;
         margin: auto;
-        /* position: absolute;
-        top: 0;
-        z-index: -1; */
     }
     .main_slick .slick-prev{
         display: none;
@@ -221,12 +205,11 @@
 
     .cont2_slick img{
         width: 100%;
-        max-width: 190px;
+        max-width: 240px;
         height: 90%;
         margin: auto;
     }
-    .cont2_slick .list_4{
-    }
+
     .cont2_more{
         margin: auto;
         margin-top: 30px;
@@ -236,7 +219,7 @@
     .cont3{
         width: 100%;
         height: 540px;
-        background-color: #fffbf4;
+        background-color: #fffcf8;
     }
     .cont3_wrap{
         width: 100%;
@@ -257,7 +240,12 @@
         box-sizing: border-box;
     }
     .cont3_list img{
+        width: 100%;
+        max-width: 500px;
+        height: 500px;
         padding: 0 60px;
+        border-top-left-radius: 50%;
+        border-top-right-radius: 50%;
     }
 
     .cont3_wrap .textbox{
@@ -347,7 +335,6 @@
     }
     .t_logo{
         text-indent: -9999px;
-        /* margin-left: 60px; */
         background: url("../images/logo_white2.png") no-repeat;
     }
 }
@@ -448,9 +435,7 @@
         width: 100%;
         height: 660px;
         margin: auto;
-        /* position: absolute;
-        top: 0;
-        z-index: -1; */
+      
     }
     .main_slick .slick-prev{
         display: none;
@@ -570,8 +555,7 @@
         height: 90%;
         margin: auto;
     }
-    .cont2_slick .list_4{
-    }
+
     .cont2_more{
         margin: auto;
         margin-top: 30px;
@@ -901,7 +885,7 @@
 
     .cont2_slick img{
         width: 100%;
-        max-width: 190px;
+        max-width: 240px;
         height: 90%;
         margin: auto;
     }
