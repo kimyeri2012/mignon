@@ -1,6 +1,8 @@
 @media screen and (min-width:1000px){ /*최대크기 넣어주기*/
     html{
-        background-color: rgb(255, 254, 250);
+        /* background-color: rgb(255, 252, 250); */
+        background-color: rgb(255, 255, 255);
+
     }
     header{
         width: 100%;
@@ -71,37 +73,60 @@
         height: 3600px;
         position: relative;
     }
+
     .main_img{
         width: 100%;    
         max-width: 1600px;
         height: 478px;
         background: url(../images/menu_main_2.jpg) no-repeat;
         background-position:0 100px;
+        /* background-size: cover; */
+        background-size: 100%;
         text-align: center;
         margin: auto;
+    }
+    
+    .main_img h2{
+        font-size: 48px;
+        color: rgb(255, 255, 255);
+        padding-top:15%;
+    }
+    .main_img p{
+        color: #fff;
+        font-size: 24px;
     }
     .sel{
         width: 100%;
         max-width: 800px;
         height: 50px;
         margin: auto;
-        background-color: #fff;
         margin-top: 80px;
-
+        border: 1px solid #4b4b4b;
+        border-collapse:collapse; 
     }
+ 
+    
     .sel li a{
         display: block;
         width: 25%;
         float: left;
         line-height: 50px;
-        
+        border-collapse:collapse; 
+        /* color: #fff; */
     }
 
-    .main_img h2{
-        font-size: 48px;
-        color: rgb(255, 255, 255);
-        padding-top:240px ;
+    .sel li a:hover{
+        background-color: #fff;
+        color: black;
     }
+
+    .sel_first a{
+        background-color: #fff;
+        color: black;
+    }
+   
+ 
+
     .line{
         width: 100px;
         height: 30px;
@@ -328,7 +353,7 @@
         height: 5000px;
         position: relative;
     }
-    .main_img{
+    /* .main_img{
         width: 100%;    
         max-width: 1600px;
         height: 478px;
@@ -341,6 +366,55 @@
         font-size: 48px;
         color: rgb(255, 255, 255);
         padding-top:240px ;
+    } */
+    .main_img{
+        width: 100%;    
+        max-width: 1600px;
+        height: 478px;
+        background: url(../images/menu_main_2.jpg) no-repeat;
+        background-position:0 100px;
+        background-size: contain;
+        text-align: center;
+        margin: auto;
+    }
+    
+    .main_img h2{
+        font-size: 40px;
+        color: rgb(255, 255, 255);
+        padding-top:18% ;
+    }
+    .main_img p{
+        color: #fff;
+        font-size: 20px;
+    }
+    .sel{
+        width: 100%;
+        max-width: 800px;
+        height: 50px;
+        margin: auto;
+        margin-top: 60px;
+        border: 1px solid #4b4b4b;
+        border-collapse:collapse; 
+    }
+ 
+    
+    .sel li a{
+        display: block;
+        width: 25%;
+        float: left;
+        line-height: 50px;
+        border-collapse:collapse; 
+        /* color: #fff; */
+    }
+
+    .sel li a:hover{
+        background-color: #fff;
+        color: black;
+    }
+
+    .sel_first a{
+        background-color: #fff;
+        color: black;
     }
     .line{
         width: 100%;
@@ -478,7 +552,7 @@
 ========================================================================== */
 @media screen and (max-width:640px){/*최소크기 넣어주기*/
     html{
-        background-color: rgb(255, 250, 250);
+        background-color: rgb(255, 255, 255);
     }
     header{
         width: 100%;
@@ -564,7 +638,7 @@
         height: 6000px;
         position: relative;
     }
-    .main_img{
+    /* .main_img{
         width: 100%;    
         max-width: 1600px;
         height: 378px;
@@ -576,6 +650,59 @@
         font-size: 48px;
         color: rgb(255, 255, 255);
         padding-top:180px ;
+    } */
+    .main_img{
+        width: 100%;    
+        max-width: 1600px;
+        height: auto;
+        background: url(../images/menu_main_2.jpg) no-repeat;
+        background-position:0 60px;
+        background-size: contain;
+        text-align: center;
+        margin: auto;
+    }
+    
+    .main_img h2{
+        font-size: 36px;
+        color: rgb(255, 255, 255);
+        padding-top:26% ;
+    }
+    .main_img p{
+        /* color: #fff;
+        font-size: 24px; */
+        display: none;
+    }
+    .sel{
+        width: 100%;
+        max-width: 800px;
+        height: 50px;
+        margin: auto;
+        border-bottom: 1px solid #c3c3c3;
+        border-collapse:collapse; 
+        margin-top: 10%;
+    }
+    
+    .sel li a{
+        display: block;
+        width: 25%;
+        float: left;
+        line-height: 50px;
+        border-collapse:collapse; 
+        
+        
+        /* color: #fff; */
+    }
+
+    .sel li a:hover{
+        background-color: rgb(255, 222, 222);
+        color: rgb(255, 255, 255);
+        border-collapse:collapse; 
+    }
+
+    .sel_first a{
+        background-color: rgb(255, 222, 222);
+        color: rgb(255, 255, 255);
+        border-collapse:collapse; 
     }
     .line{
         width: 100%;
