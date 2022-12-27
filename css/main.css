@@ -800,7 +800,7 @@
         margin: auto;
         text-align: center;
         padding: 40px 40px 60px 40px;
-        font-size: 48px;
+        font-size: 40px;
     }
     .cont1_wrap .left{
         width: 100%;
@@ -857,7 +857,7 @@
     }
     .cont2_wrap h2{
         padding: 60px 40px 40px 40px;
-        font-size: 48px;
+        font-size: 40px;
     }
     .cont2_list li{
         float: left;
@@ -939,7 +939,7 @@
     }
     .cont4_wrap h2{
         padding: 40px;
-        font-size: 48px;
+        font-size: 40px;
     }
     .cont4_wrap .txt1{
         padding: 0 40px;
