@@ -773,11 +773,11 @@
         top: 0;
         z-index: -1; */
     }
-    .main_slick .slick-prev{
+    /* .main_slick .slick-prev{
         display: none;
     }
     .main_img .slick-next{
-    }
+    } */
 
     .line{
         width: 100%;
