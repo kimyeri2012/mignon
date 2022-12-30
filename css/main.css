@@ -193,6 +193,16 @@
         padding: 10px 15px;
         cursor: pointer;
     }
+    .cont2_wrap .tabs li:hover{
+        height: 0.1px;
+        border-bottom:6px solid rgb(255, 222, 222);
+        border-collapse:collapse; 
+    }
+    .cont2_wrap .tabs .first{
+        height: 0.1px;
+        border-bottom:6px solid rgb(255, 222, 222);
+        border-collapse:collapse; 
+    }
 
     .tab-content{
         display: none;
@@ -357,7 +367,7 @@
         
     }
     .head_wrap{
-        height: 100px;
+        height: 80px;
         position: relative;
         margin: auto;
         border-collapse:collapse;
@@ -366,7 +376,7 @@
         width: 271px;
         height: 63px;
         float: left;
-        margin-top: 10px;
+        margin-top: 4px;
         margin-left: 30px;
     }
     .logo a{
@@ -394,7 +404,7 @@
         height: 32px;
         background: url(../images/meme.png)no-repeat;
         position: absolute;
-        top: 30px;
+        top: 22px;
         right: 5%;
         text-indent: -9999px;
         cursor: pointer;
@@ -408,7 +418,6 @@
         height: 100px;
         z-index: 9999;
     }
-
     .first{
         padding-left: 4%;
     }
@@ -457,7 +466,7 @@
     .cont1_wrap{
         width: 100%;
         max-width: 1200px;
-        height: 640px;
+        height: 740px;
         margin: auto;
         font-size: 18px;
         
@@ -520,7 +529,7 @@
     .cont2_wrap{
         width: 100%;
         max-width: 1200px;
-        height: 620px;
+        height: 500px;
         margin: auto;
         position: relative;
     }
@@ -542,6 +551,16 @@
         display: inline-block;
         padding: 10px 15px;
         cursor: pointer;
+    }
+    .cont2_wrap .tabs li:hover{
+        height: 0.1px;
+        border-bottom:8px solid rgb(255, 222, 222);
+        border-collapse:collapse; 
+    }
+    .cont2_wrap .tabs .first{
+        height: 0.1px;
+        border-bottom:8px solid rgb(255, 222, 222);
+        border-collapse:collapse; 
     }
 
     .tab-content{
@@ -569,14 +588,14 @@
     .cont3_wrap{
         width: 100%;
         max-width: 1200px;
-        height: 840px;
+        height:840px;
         margin: auto;
         position: relative;
     }
     .cont3_wrap h2{
         font-size: 48px;
         text-align: center;
-        padding: 20px 0;
+        padding: 40px 0 60px 0;
     }
     .cont3_list{
         width: 100%;
@@ -585,16 +604,19 @@
     }
     .cont3_list img{
         width: 100%;
-        max-width: 500px;
-        height: 500px;
+        max-width: 400px;
+        height: 400px;
         border-top-left-radius: 50%;
         border-top-right-radius: 50%;
         margin: auto;
     }
 
-    .cont3_wrap .textbox{
+    .cont3_wrap .textbox .txt1{
+        /* box-sizing: border-box;
+        margin-top: 140px; */
         box-sizing: border-box;
-        margin-top: 140px;
+        margin-top: -40px;
+        text-align: center;
     }
     .cont3_wrap .textbox img{
         display: none;
@@ -605,8 +627,8 @@
     .cont3_more{
         width: 100px;
         font-size: 20px;
-        margin-left: 104px;
-        margin-top: 20px;
+        text-align: center;
+        margin: auto;
     }
     .cont3_wrap .textbox img{
         margin-left: 260px;
@@ -620,6 +642,40 @@
         line-height: 52px;
         font-size: 20px;
     }
+
+    
+    /* .cont3_wrap .textbox{
+        width: 50%;
+        float: left;
+        box-sizing: border-box;
+        margin-top: 120px;
+    }
+    .cont3 .txt1{
+        width: auto;
+        margin-left: 12%;
+
+    }
+    .cont3_more{
+        width: 100px;
+        font-size: 20px;
+        margin-left: 12%;
+    }
+    .cont3_wrap .textbox img{
+        margin-left: 260px;
+        margin-top: 30px;
+    }
+    .btbt{
+        width: 172px;
+        height: 52px;
+        position: absolute;
+        top: 400px;
+        left: 680px;
+        text-align: center;
+        line-height: 52px;
+        font-size: 20px;
+    } */
+
+
 
     .cont4_wrap{
         width: 100%;
@@ -866,23 +922,38 @@
         position: relative;
     }
     .cont2_wrap h2{
-        padding: 60px 40px 40px 40px;
+        padding: 60px 40px 20px 40px;
         font-size: 40px;
+        text-align: center;
     }
     .cont2_list li{
         float: left;
     }
     .cont2_wrap .tabs{
-        padding-left:76%;
-        margin-top: -90px;
         margin-bottom:50px ;
         list-style: none;
+        text-align: center;
     }
     .cont2_wrap .tabs li{
+        width: 15%;
         display: inline-block;
-        padding: 10px 15px;
+        padding: 10px 20px;
         cursor: pointer;
+        border-collapse:collapse; 
+        text-align: center;
     }
+ 
+    .cont2_wrap .tabs li:hover{
+        height: 0.1px;
+        border-bottom:6px solid rgb(255, 222, 222);
+        border-collapse:collapse; 
+    }
+    .cont2_wrap .tabs .first{
+        height: 0.1px;
+        border-bottom:6px solid rgb(255, 222, 222);
+        border-collapse:collapse; 
+    }
+    
 
     .tab-content{
         display: none;
@@ -929,12 +1000,8 @@
         height: auto;
         margin: auto;
     }
-    .cont3_list img{
-        width: 100%;
-        max-width: 400px;
-        padding: 0 40px;
-    }
-    .cont3_more{
+
+    /* .cont3_more{
         width: 100px;
         font-size: 20px;
     }
@@ -943,7 +1010,45 @@
     }
     .btbt{
         text-align: center;
+    } */
+    .cont3_list img{
+        width: 100%;
+        max-width: 400px;
+        height: 400px;
+        border-top-left-radius: 50%;
+        border-top-right-radius: 50%;
+        margin: auto;
+        margin-top: 20px;
     }
+    .cont3_wrap .txt1{
+        box-sizing: border-box;
+        margin-top: -450px;
+        text-align: center;
+    }
+    .cont3_wrap .textbox img{
+        display: none;
+    }
+
+    .cont3_more{
+        width: 100px;
+        font-size: 20px;
+        text-align: center;
+        padding-top: 420px;
+        text-align: center;
+        margin: auto;
+    }
+
+
+    /* .btbt{
+        width: 172px;
+        height: 52px;
+        position: absolute;
+        top: 400px;
+        left: 680px;
+        text-align: center;
+        line-height: 52px;
+        font-size: 20px;
+    } */
 
     .cont4_wrap{
         width: 100%;

@@ -7,9 +7,9 @@
     <script type="text/javascript" src="http://code.jquery.com/jquery-3.6.1.min.js"></script>
     <link rel="stylesheet" type="text/css" href="slick-1.8.1/slick/slick.css"/>
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <link rel="stylesheet" href="css/brand.css">
-    <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="./booklet-master/src/jquery.booklet.latest.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/brand.css">
     <script src="./booklet-master/src/jquery-ui-1.10.4.min.js"></script>
     <script src="./booklet-master/src/jquery.booklet.latest.min.js"></script>
     <script src="./booklet-master/src/jquery.easing.1.3.js"></script>
@@ -35,16 +35,15 @@
                 $(function(){
                     $('#mybook').booklet({
                             width:1200,
-                            height:800,
+                            height:700,
                             closed: true,
                     });
                 })
             }
-
             else if( window.innerWidth >= 1100){
                 $('#mybook').booklet({
                     width:1000,
-                    height:500,
+                    height:600,
                     closed: true,
                 });
             }
@@ -71,14 +70,14 @@
             if( window.innerWidth >= 1240){
                 $('#mybook').booklet({
                     width:1200,
-                    height:600,
+                    height:700,
                     closed: true,
                 });
             }
             else if( window.innerWidth >= 1100){
                 $('#mybook').booklet({
                     width:1000,
-                    height:500,
+                    height:600,
                     closed: true,
                 });
             }
@@ -98,7 +97,6 @@
             }
         
         }).resize;
-
 
     </script>
 
@@ -149,7 +147,7 @@
 
         <div id="mybook">
 
-            <div class="p_1">
+            <div class="page p1">
                 <h3 class="logo">cafe mignon</h3>
                 <p class="p1_txt1">
                     <br>
@@ -161,25 +159,66 @@
                     
             </div>
 
-            <div>
+            <div class="page p2">
+                <!-- <h3>Yay, Page 3!</h3> -->
+                <p class="p2_txt1">
+                    한가로운 오후 <br>
+                    파파의 카페에 고양이 한마리가 놀러왔어요! <br>
+                </p>
+                <img class="p2_img" src="images/mignon11.png" alt="">
+            </div>
+
+            <div class="page p3">
+                <!-- <h3>Yay, Page 3!</h3> -->
+                <p class="p3_txt1">
+                    파파가 맘에 들었던  <br>
+                    고양이는 파파에게 반갑게 인사하네요! <br>
+                </p>
+                <img class="p3_img" src="images/mignon22.png" alt="">
+            </div>
+            <div class="page p4">
+                <!-- <h3>Yay, Page 3!</h3> -->
+                <p class="p4_txt1">
+                    파파가 고양이 이름을  <br>
+                    미뇽(mignon)이라고 지었습니다. <br>
+                </p>
+                <img class="p4_img" src="images/mignon33_03.png" alt="">
+            </div>
+            <div class="page p5">
+                <!-- <h3>Yay, Page 3!</h3> -->
+                <p class="p5_txt1">
+                    미뇽이는 새 이름이  <br>
+                    참 마음에 들었답니다! <br>
+                </p>
+                <img class="p5_img" src="images/mignon4_02.png" alt="">
+            </div>
+            <div class="page p6">
+                <!-- <h3>Yay, Page 3!</h3> -->
+                <p class="p6_txt1">
+                    어느새 미뇽이는 <br>
+                    파파가 가꾼 정원에서<br>
+                    여유롭게 낮잠을 자고 있네요<div class=""></div>
+                </p>
+                <img class="p6_img" src="images/mignon5.png" alt="">
+            </div>
+
+            <!-- <div>
                 <p>
                     페르시안 고양이 'Mignon'이예요. <br>
-
-                    정원에 놀러온 미뇽이와 반갑게 맞아주는 파파 <br>
-                    
-
                 </p>
-                <img class="p2_img" src="images/미뇽.png" alt="">
-            </div>
-
-            <div>
-                <h3>Yay, Page 3!</h3>
-            </div>
-
-            <div>
-                <h3>Yay, Page 4!</h3>
-            </div>
+                <img class="p_img" src="images/미뇽.png" alt="">
+            </div> -->
         </div> 
+    </div>
+
+    <div class="footer">
+        <div class="footer_wrap">
+            <h2 class="t_logo">카페미뇽</h2>
+            <div class="text_box">
+
+            </div>
+        </div>
+
     </div>
     
 </body>
