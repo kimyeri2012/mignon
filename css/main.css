@@ -170,7 +170,7 @@
     .cont2_wrap{
         width: 100%;
         max-width: 1200px;
-        height: 520px;
+        height: 620px;
         margin: auto;
         position: relative;
     }
@@ -231,7 +231,7 @@
     .cont3_wrap h2{
         position: absolute;
         top: 40px;
-        left: 700px;
+        left: 56%;
         font-size: 48px;
     }
     .cont3_list{
@@ -241,9 +241,9 @@
     }
     .cont3_list img{
         width: 100%;
-        max-width: 500px;
+        max-width: 480px;
         height: 500px;
-        padding: 0 60px;
+        padding: 20px;
         border-top-left-radius: 50%;
         border-top-right-radius: 50%;
     }
@@ -252,13 +252,17 @@
         width: 50%;
         float: left;
         box-sizing: border-box;
-        margin-top: 140px;
+        margin-top: 120px;
+    }
+    .cont3 .txt1{
+        width: auto;
+        margin-left: 12%;
+
     }
     .cont3_more{
         width: 100px;
         font-size: 20px;
-        margin-left: 104px;
-        margin-top: 20px;
+        margin-left: 12%;
     }
     .cont3_wrap .textbox img{
         margin-left: 260px;
@@ -516,7 +520,7 @@
     .cont2_wrap{
         width: 100%;
         max-width: 1200px;
-        height: 520px;
+        height: 620px;
         margin: auto;
         position: relative;
     }
@@ -565,31 +569,39 @@
     .cont3_wrap{
         width: 100%;
         max-width: 1200px;
-        height: 540px;
+        height: 840px;
         margin: auto;
         position: relative;
     }
     .cont3_wrap h2{
-        position: absolute;
-        top: 40px;
-        left: 700px;
         font-size: 48px;
+        text-align: center;
+        padding: 20px 0;
     }
     .cont3_list{
-        width: 50%;
+        width: 100%;
         float: left;
         box-sizing: border-box;
     }
     .cont3_list img{
-        padding: 0 60px;
+        width: 100%;
+        max-width: 500px;
+        height: 500px;
+        border-top-left-radius: 50%;
+        border-top-right-radius: 50%;
+        margin: auto;
     }
 
     .cont3_wrap .textbox{
-        width: 50%;
-        float: left;
         box-sizing: border-box;
         margin-top: 140px;
     }
+    .cont3_wrap .textbox img{
+        display: none;
+    }
+    /* .cont3 p{
+        width: auto;
+    } */
     .cont3_more{
         width: 100px;
         font-size: 20px;
@@ -603,9 +615,7 @@
     .btbt{
         width: 172px;
         height: 52px;
-        position: absolute;
-        top: 400px;
-        left: 680px;
+
         text-align: center;
         line-height: 52px;
         font-size: 20px;

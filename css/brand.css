@@ -1,0 +1,98 @@
+html{
+    background-color: rgb(247, 242, 242);
+}
+header{
+    width: 100%;
+    height: 100px;
+    position: relative;
+    z-index: 9999;
+}
+.head_wrap{
+    height: 100px;
+    position: relative;
+    margin: auto;
+    border-collapse:collapse;
+}
+.click_mv{
+    width: 150px;
+}
+.click_mv a:hover{
+    color:#ff0077
+}
+.down {
+    background-color:#fff;
+    -webkit-transition-duration:0.4s;
+    -webkit-transition-timing-function:ease;
+    transition-duration:0.4s;
+    transition-timing-function:ease;
+}
+
+.logo{
+    width: 271px;
+    height: 63px;
+    float: left;
+    margin-top: 10px;
+    margin-left: 30px;
+}
+.logo a{
+    display: block;
+    width: 271px;
+    height: 63px;
+    background:url(../images/카페미뇽_03.png) no-repeat ;
+    text-indent: -9999px;
+}
+
+.menu_icon{
+    display: none;
+}
+.gnb{
+    width: 100%;
+    height: 100px;
+    z-index: 9999;
+}
+
+.first{
+    padding-left: 4%;
+}
+.gnb_1 > a{
+    font-weight:bold;
+}
+.gnb>ul>li{border-collapse:collapse;font-size:18px;font:"나눔고딕";float: left;width: 16%;height: 40px;line-height: 30px;text-align: center;position: relative;}
+.gnb>ul>li>a{border-collapse:collapse; display:block; width: 170px; height: 100px; display:inline-block; line-height: 100px;}
+.gnb ul ul li:hover{border: 1px solid #ecdade; z-index: 9999px;border-collapse:collapse;}
+.gnb ul ul{line-height: 34px; border-collapse:collapse; z-index: 9998;width: 100%; height: 200px; border:0.5px solid #cbcbcb;background-color: white; font-size: 17px;}
+.gnb_1 > a:hover{background-color: #ecdade; color: #ffffff; }
+.gnb:hover{background-color: #ffffff;border-collapse:collapse; }
+.main{
+    width: 100%;
+    height: 3000px;
+}
+.main h2{
+    font-size: 38px;
+    text-align: center;
+    padding: 40px;
+}
+#mybook .p_1{
+    width: 100%;
+    height: 680px;
+}
+#mybook .p2_img{
+    width: 100%;
+    max-width: 400px;
+    height: 440px;
+    margin: auto;
+}
+.p_1 h3{
+    width: 100%;
+    max-width: 500px;
+    height: 100px;
+    background: url(../images/logo_black.png) no-repeat ;
+    text-indent: -9999px;
+    margin-top: 100px;
+    margin-left: 110px;
+}
+.p1_txt1{
+    text-align: center;
+    padding-top: 220px;
+    font-size: 22px;
+}

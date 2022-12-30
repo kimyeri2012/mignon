@@ -8,7 +8,7 @@
         width: 100%;
         height: auto;
         position: relative;
-        z-index: 2;
+        z-index: 9999;
         position:fixed;
         background-color:#fff;
     }
@@ -197,12 +197,74 @@
         height: auto;
         float: left;
     }
+
     .cont2_list li img{
         width: 100%;
         max-width: 240px;
         margin: auto;
-        padding: 30px;
+        padding: 20px;
+        cursor: pointer;
     }
+    /* ===============================================
+    모달창 
+    ======================================================= */
+    /*   팝업 임시 버튼 스타일  */
+    .container{
+        background-color: antiquewhite;
+    }
+    /* 팝업 스타일 */
+    .modal-wrap {
+        display:none;
+        width: 16%;
+        /* width:240px; */
+        /* height:280px; */
+        height:auto;
+        /* background:rgb(255, 248, 248); */
+        background:rgb(255, 255, 255);
+        z-index:1000;
+        padding: 20px 20px 0 20px;
+        border-collapse:collapse; 
+        border: 0.5px solid #c3c3c3;
+        margin: auto;
+    }
+    .modal-wrap .txt_1{
+        padding: 0;
+        font-size: 18px;
+        border-bottom: 1px solid #cbcbcb;
+    }
+    .modal-wrap .txt_2{
+        padding: 24px 0 0 0;
+        font-size: 14px;
+        border-collapse:collapse; 
+        
+    }
+    .modal-wrap .txt_3{
+        padding: 40px 0 38px 0;
+        font-size: 14px;
+        border-collapse:collapse; 
+        
+        
+    }
+    .modal-wrap .txt_bt{
+        background-color: #f9f9f9;
+        width: 100%;
+        height: auto;
+        z-index: 40;
+        padding: 20px;
+        margin-left: -20px;
+        border-collapse:collapse; 
+        font-size: 12px;
+    }
+    .modal-close{
+        position: absolute;
+        right: 0;
+        top: 0;
+        margin: 10px;
+    }
+
+    /* ============================================
+     ============================================ */
+
     .cont3{
         width: 100%;
         max-width: 1200px;
@@ -498,7 +560,64 @@
         max-width: 200px;
         margin: auto;
         padding: 30px 0;
+        cursor: pointer;
     }
+        /* ===============================================
+    모달창 
+    ======================================================= */
+    /*   팝업 임시 버튼 스타일  */
+    .container{
+        background-color: antiquewhite;
+    }
+    /* 팝업 스타일 */
+    .modal-wrap {
+        display:none;
+        width:24%;
+        height:auto;
+        /* background:rgb(255, 248, 248); */
+        background:rgb(255, 255, 255);
+        z-index:1000;
+        padding: 20px 20px 0 20px;
+        border-collapse:collapse; 
+        border: 0.5px solid #c3c3c3;
+    }
+    .modal-wrap .txt_1{
+        padding: 0;
+        font-size: 18px;
+        border-bottom: 1px solid #cbcbcb;
+    }
+    .modal-wrap .txt_2{
+        padding: 24px 0 0 0;
+        font-size: 14px;
+        border-collapse:collapse; 
+        
+    }
+    .modal-wrap .txt_3{
+        padding: 40px 0 48px 0;
+        font-size: 14px;
+        border-collapse:collapse; 
+        
+        
+    }
+    .modal-wrap .txt_bt{
+        background-color: #f9f9f9;
+        width: 100%;
+        height: auto;
+        z-index: 40;
+        padding: 20px;
+        margin-left: -20px;
+        border-collapse:collapse; 
+        font-size: 12px;
+    }
+    .modal-close{
+        position: absolute;
+        right: 0;
+        top: 0;
+        margin: 10px;
+    }
+
+    /* ============================================
+     ============================================ */
     .cont3{
         width: 100%;
         max-width: 1200px;

@@ -142,7 +142,20 @@
         //     autoplaySpeed: 2000,
         // });
     })
+    $(document).ready(function(){
+        $('ul.tabs li').click(function(){
+            var tab_id = $(this).attr('data-tab');
+
+            $('ul.tabs li').removeClass('current');
+            $('.tab-content').removeClass('current');
+
+            $(this).addClass('current');
+            $("#"+tab_id).addClass('current');
+        });
+
+    });
 </script>
+
 </head>
 <body>
     <header id="header" >
@@ -204,7 +217,7 @@
                     <div class="textbox">
                         <h3>MIGNON & PAPA</h3>
                         <p>미뇽이와 파파의 <br> 만남이 궁금하신가요?</p>
-                        <p class="click_mv"><a href="#"> Brand Story<span class="mv"> -> </span></a></p>
+                        <p class="click_mv"><a href="brand.html"> Brand Story<span class="mv"> -> </span></a></p>
                     </div>
                 </div>
                 <div class="right">
@@ -233,40 +246,57 @@
         
                 <div id="tab-1" class="tab-content current">
                     <ul id="tab_1" class="tab_content current cont2_1_1 cont2_slick">
-                        <li class="list_1"><a href="#"><img src="images/mn_1.png" alt=""></a></li>
-                        <li class="list_2"><a href="#"><img src="images/mn_2.png" alt=""></a></li>
-                        <li class="list_3"><a href="#"><img src="images/mn_3.png" alt=""></a></li>
-                        <li class="list_4"><a href="#"><img src="images/mn_4.png" alt=""></a></li>
-                        <li class="list_5"><a href="#"><img src="images/mn_5.png" alt=""></a></li>
-                        <li class="list_6"><a href="#"><img src="images/mn_6.png" alt=""></a></li>
-                        <li class="list_7"><a href="#"><img src="images/mn_8.png" alt=""></a></li>
+                        <li class="list_1"><img src="images/mn_1.png" alt=""></li>
+                        <li class="list_2"><img src="images/mn_2.png" alt=""></li>
+                        <li class="list_3"><img src="images/mn_3.png" alt=""></li>
+                        <li class="list_4"><img src="images/mn_4.png" alt=""></li>
+                        <li class="list_5"><img src="images/mn_5.png" alt=""></li>
+                        <li class="list_6"><img src="images/mn_6.png" alt=""></li>
+                        <li class="list_7"><img src="images/mn_8.png" alt=""></li>
                     </ul>
                     <p class="click_mv cont2_more"><a href="./menu.html"> more <span class="mv"> -> </span></a></p>
                 </div>
-                <div id="tab-2" class="tab-content"><p>tab2입니다.</p></div>
-                <div id="tab-3" class="tab-content"><p>tab3입니다.</p></div>
-                <div id="tab-4" class="tab-content"><p>tab4입니다.</p></div>
+                <div id="tab-2" class="tab-content">
+                    <ul id="tab_1" class="tab_content current cont2_1_1 cont2_slick">
+                        <li class="list_1"><a href="#"><img src="images/cf_1.jpg" alt=""></a></li>
+                        <li class="list_2"><a href="#"><img src="images/cf_2.png" alt=""></a></li>
+                        <li class="list_3"><a href="#"><img src="images/cf_3.png" alt=""></a></li>
+                        <li class="list_4"><a href="#"><img src="images/cf_4.png" alt=""></a></li>
+                        <li class="list_5"><a href="#"><img src="images/cf_5.png" alt=""></a></li>
+                        <li class="list_6"><a href="#"><img src="images/cf_6.jpg" alt=""></a></li>
+                    </ul>
+                </div>
+                <div id="tab-3" class="tab-content">
+                    <ul id="tab_1" class="tab_content current cont2_1_1 cont2_slick">
+                        <li class="list_1"><a href="#"><img src="images/vb_1.jpg" alt=""></a></li>
+                        <li class="list_2"><a href="#"><img src="images/vb_2.jpg" alt=""></a></li>
+                        <li class="list_3"><a href="#"><img src="images/vb_3.jpg" alt=""></a></li>
+                        <li class="list_4"><a href="#"><img src="images/vb_4.jpg" alt=""></a></li>
+                        <li class="list_5"><a href="#"><img src="images/vb_5.jpg" alt=""></a></li>
+                        <li class="list_6"><a href="#"><img src="images/vb_6.jpg" alt=""></a></li>
+                        <li class="list_7"><a href="#"><img src="images/vb_8.jpg" alt=""></a></li>
+                    </ul>
+                </div>
+                <div id="tab-4" class="tab-content">
+                    <ul id="tab_1" class="tab_content current cont2_1_1 cont2_slick">
+                        <li class="list_1"><a href="#"><img src="images/tea_1.jpg" alt=""></a></li>
+                        <li class="list_2"><a href="#"><img src="images/tea_2.jpg" alt=""></a></li>
+                        <li class="list_3"><a href="#"><img src="images/tea_3.jpg" alt=""></a></li>
+                        <li class="list_4"><a href="#"><img src="images/tea_4.jpg" alt=""></a></li>
+                        <li class="list_5"><a href="#"><img src="images/tea_5.jpg" alt=""></a></li>
+                        <li class="list_6"><a href="#"><img src="images/tea_6.jpg" alt=""></a></li>
+                        <li class="list_7"><a href="#"><img src="images/tea_8.jpg" alt=""></a></li>
+                    </ul>
+                </div>
             </div>
 
-            <script>
-                $(document).ready(function(){
-                    $('ul.tabs li').click(function(){
-                        var tab_id = $(this).attr('data-tab');
-        
-                        $('ul.tabs li').removeClass('current');
-                        $('.tab-content').removeClass('current');
-        
-                        $(this).addClass('current');
-                        $("#"+tab_id).addClass('current');
-                    });
-        
-                });
-            </script>
+
             
         </div>
         <div class="cont3">
             <div class="cont3_wrap">
                 <h2>STORE INTERIOR</h2>
+                
         
                 <ul class="cont3_list cont3_slick">
                     <li><img src="images/inte1.jpg" alt=""></li>
@@ -274,6 +304,7 @@
                     <!-- <li><img src="" alt=""></li> -->
                 </ul>
                 <div class="textbox">
+                    <p class="txt1">함께 고민하고 연구하는 카페미뇽의 인테리어 스타일</p>
                     <p class="click_mv cont3_more"><a href="#"> Click <span class="mv"> -> </span></a></p>
                     <img src="images/mipapa.png" alt="">
                 </div>

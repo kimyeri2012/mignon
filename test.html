@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="http://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="slick-1.8.1/slick/slick.css"/>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="slick-1.8.1/slick/slick.js"></script>
+    <title>Document</title>
+
+    <style>
+/*   팝업 임시 버튼 스타일  */
+        .container{
+            width: 500px;
+            height: 500px;
+            background-color: antiquewhite;
+            margin: auto;
+        }
+        /* 팝업 스타일 */
+        .modal-wrap {display:none;width:500px;height:500px;background:rgb(255, 208, 208);z-index:1000;}
+    </style>
+</head>
+
+
+
+<body>
+    <!-- 전체 레이아웃 -->
+    <div id="wrap">
+        <!-- Content -->
+        <section class="content">
+            <div class="container">
+                <!-- 팝업용 임시 버튼입니다. -->
+                    <a href="#" class="btn-open" onClick="javascript:popOpen();">
+                        <span>열기</span>
+                    </a>
+                <!-- //팝업용 임시 버튼입니다. -->
+            </div>
+        </section>
+        <!-- //Content -->       
+    </div>
+<!-- //전체 레이아웃 -->
+
+    <!-- modal 영역 -->
+    <div class="modal-wrap">
+        modal sample
+        <button class="modal-close" onClick="javascript:popClose();">닫기</button>
+    </div>
+    <!-- //modal 영역 -->
+
+    <script>
+
+        function popOpen() {
+
+        var modalPop = $('.modal-wrap');
+        var p= $('.container').offset();
+        var top = p.top;
+        var left = p.left;
+
+        $(modalPop).css({"z-index":'9999',"top":top,"left":left,"position":"absolute"}).show();
+
+        }
+
+        function popClose() {
+        var modalPop = $('.modal-wrap');
+        var modalBg = $('.modal-bg');
+
+        $(modalPop).hide();
+        $(modalBg).hide();
+
+        }
+    </script>
+    
+</body>
+</html>
