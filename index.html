@@ -35,12 +35,16 @@
             });
             $(".gnb_1 >ul").hide();
 
-            $(".gnb>ul").mouseover(function () {
+            $(".gnb1>ul").mouseover(function () {
                 $(this).find("ul").stop().slideDown("fast");
             })
-            $(".gnb>ul").mouseout(function () {
+            $(".gnb1>ul").mouseout(function () {
                 $(this).find("ul").stop().slideUp("fast");
             })
+
+            // ===================================================
+            $(".gnb2 ul li ul").hide();
+            // ===================================================
 
             $(".click_mv").mouseover(function () {
                 $(this).find('.mv').stop().animate({
@@ -55,6 +59,38 @@
             // $(".gnb>ul>li").hover(function() {
             //     $(this).find("ul").stop().slideToggle("fast")
             // })
+
+
+            // ===========================================================
+
+            $('.menu_icon').click(function() {
+                $('html').addClass('active');
+                $('.menu_icon').hide();
+                $('.menu_icon2').show();
+                $('.gnb_hide').show();
+            });
+
+            $('body').prepend('<div id="overlay">');
+
+            $('.menu_icon2').click(function() {
+                $('html').removeClass('active');
+                $('.menu_icon2').hide(); 
+                $('.menu_icon').show();
+                $('.gnb2>ul').hide();
+
+
+        
+            });
+
+            // $(".question").click(function(){
+            //         $(this).next().slideToggle(300);
+            //         $(".question").not(this).next().slideUp(300);
+            //         return false;
+            //     });
+
+
+            // ===========================================================
+
 
             $('.main_slick').slick({
                 slidesToShow: 1,
@@ -121,7 +157,7 @@
 							slidesToShow:3 
 						} 
 					},
-					{ 
+					{
 						breakpoint: 640, 
 						settings: {	
 							
@@ -137,25 +173,28 @@
 					}
 				]
             });
+
         //     $('.cont3_slick').slick({
         //     slidesToShow: 3,
         //     slidesToScroll: 1,
         //     autoplay: true,
         //     autoplaySpeed: 2000,
-        // });
-    })
+        });
+    // })/
     $(document).ready(function(){
         $('ul.tabs li').click(function(){
+            
             var tab_id = $(this).attr('data-tab');
-
+            // $('ul.tabs li').removeClass('current');
             $('ul.tabs li').removeClass('current');
             $('.tab-content').removeClass('current');
 
             $(this).addClass('current');
+            $(this).addClass('first');
             $("#"+tab_id).addClass('current');
         });
-
     });
+
 </script>
 
 </head>
@@ -163,8 +202,8 @@
     <header id="header" >
         <div class="head_wrap">
             <h1 class="logo" id="logo"><a href="./index.html">cafemignon</a></h1>
-                <nav class="gnb" id="gnb">
-                    <span class="menu_icon"><a href="#"> menu</a></span>
+                <div class="gnb1" id="gnb1">
+
                     <ul class="gnb_hide">
                         <li class="gnb_1 first"><a href="#">브랜드 소개</a>
                             <ul class="gnb_2">
@@ -196,7 +235,42 @@
                             </ul>
                         </li>
                     </ul>
-                </nav>
+                </div>
+                <div class="gnb2" id="gnb2">
+                    <span class="menu_icon2"><a href="#">menu</a></span>
+                    <span class="menu_icon"><a href="#">menu</a></span>
+                    <ul class="gnb_hide">
+                        <li class="gnb_1 first"><a href="#">브랜드 소개</a>
+                            <ul class="gnb_2">
+                                <li><a href="#">회사소개</a></li>
+                                <li><a href="#">브랜드스토리</a></li>
+                                <li><a href="#">BI소개</a></li>
+                                <li><a href="#">제조사업</a></li>
+                            </ul>
+                        </li>
+                        <li class="gnb_1" ><a href="#">메뉴</a>
+                            <ul class="gnb_2">
+                                <li><a href="#">키쉬</a></li>
+                                <li><a href="#">커피</a></li>
+                                <li><a href="#">베버리지</a></li>
+                                <li><a href="#">티</a></li>
+                            </ul>
+                        </li>
+                        <li class="gnb_1" ><a href="#">프랜차이즈</a>
+                            <ul class="gnb_2">
+                                <li><a href="#">인테리어</a></li>
+                                <li><a href="#">경쟁력</a></li>
+                                <li><a href="#">개설비용</a></li>
+                                <li><a href="#">가맹문의</a></li>
+                            </ul>
+                        </li>
+                        <li class="gnb_1" ><a href="#">스토어</a>
+                            <ul class="gnb_2">
+                                <li><a href="#">매장찾기</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
         </div>
     </header>
     <div class="main">
@@ -236,17 +310,16 @@
 
         </div>
         <div class="cont2_wrap">
-            <div class="cont2_wrap">
                 <h2>MENU</h2>
                 <ul class="tabs">
-                    <li class="tab-link current first" data-tab="tab-1">키쉬 </li>
-                    <li class="tab-link" data-tab="tab-2">커피</li>
-                    <li class="tab-link" data-tab="tab-3">베버리지</li>
-                    <li class="tab-link" data-tab="tab-4">티</li>
+                    <li class="current" data-tab="tab-1"> 키쉬 </li>
+                    <li data-tab="tab-2"> 커피</li>
+                    <li data-tab="tab-3"> 베버리지</li>
+                    <li data-tab="tab-4"> 티</li>
                 </ul>
         
                 <div id="tab-1" class="tab-content current">
-                    <ul id="tab_1" class="tab_content current cont2_1_1 cont2_slick">
+                    <ul id="tab_1" class="tab_content cont2_1_1 cont2_slick">
                         <li class="list_1"><img src="images/mn_1.png" alt=""></li>
                         <li class="list_2"><img src="images/mn_2.png" alt=""></li>
                         <li class="list_3"><img src="images/mn_3.png" alt=""></li>
@@ -258,7 +331,7 @@
                     <p class="click_mv cont2_more"><a href="./menu.html"> more <span class="mv"> -> </span></a></p>
                 </div>
                 <div id="tab-2" class="tab-content">
-                    <ul id="tab_1" class="tab_content current cont2_1_1 cont2_slick">
+                    <ul id="tab_1" class="tab_content cont2_1_1 cont2_slick">
                         <li class="list_1"><a href="#"><img src="images/cf_1.jpg" alt=""></a></li>
                         <li class="list_2"><a href="#"><img src="images/cf_2.png" alt=""></a></li>
                         <li class="list_3"><a href="#"><img src="images/cf_3.png" alt=""></a></li>
@@ -266,9 +339,10 @@
                         <li class="list_5"><a href="#"><img src="images/cf_5.png" alt=""></a></li>
                         <!-- <li class="list_6"><a href="#"><img src="images/cf_6.jpg" alt=""></a></li> -->
                     </ul>
+                    <p class="click_mv cont2_more"><a href="./menu.html"> more <span class="mv"> -> </span></a></p>
                 </div>
                 <div id="tab-3" class="tab-content">
-                    <ul id="tab_1" class="tab_content current cont2_1_1 cont2_slick">
+                    <ul id="tab_1" class="tab_content cont2_1_1 cont2_slick">
                         <li class="list_1"><a href="#"><img src="images/vb_1.jpg" alt=""></a></li>
                         <li class="list_2"><a href="#"><img src="images/vb_2.jpg" alt=""></a></li>
                         <li class="list_3"><a href="#"><img src="images/vb_3.jpg" alt=""></a></li>
@@ -277,9 +351,10 @@
                         <!-- <li class="list_6"><a href="#"><img src="images/vb_6.jpg" alt=""></a></li>
                         <li class="list_7"><a href="#"><img src="images/vb_8.jpg" alt=""></a></li> -->
                     </ul>
+                    <p class="click_mv cont2_more"><a href="./menu.html"> more <span class="mv"> -> </span></a></p>
                 </div>
                 <div id="tab-4" class="tab-content">
-                    <ul id="tab_1" class="tab_content current cont2_1_1 cont2_slick">
+                    <ul id="tab_1" class="tab_content cont2_1_1 cont2_slick">
                         <li class="list_1"><a href="#"><img src="images/tea_1.jpg" alt=""></a></li>
                         <li class="list_2"><a href="#"><img src="images/tea_2.jpg" alt=""></a></li>
                         <li class="list_3"><a href="#"><img src="images/tea_3.jpg" alt=""></a></li>
@@ -288,7 +363,7 @@
                         <!-- <li class="list_6"><a href="#"><img src="images/tea_6.jpg" alt=""></a></li>
                         <li class="list_7"><a href="#"><img src="images/tea_8.jpg" alt=""></a></li> -->
                     </ul>
-                </div>
+                    <p class="click_mv cont2_more"><a href="./menu.html"> more <span class="mv"> -> </span></a></p>
             </div>
 
 
@@ -307,7 +382,7 @@
                 <div class="textbox">
                     <p class="txt1">함께 고민하고 연구하는 카페미뇽의 인테리어 스타일</p>
                     <p class="click_mv cont3_more"><a href="#"> Click <span class="mv"> -> </span></a></p>
-                    <img src="images/mipapa.png" alt="">
+                    <img class="papa" src="images/mipapa.png" alt="">
                 </div>
                 <!-- <p class="btbt"> 01/04 </p> -->
             </div>
@@ -359,7 +434,7 @@
         </div>
     </div>
 
-    <div class="footer">
+    <!-- <div class="footer">
         <div class="footer_wrap">
             <h2 class="t_logo">카페미뇽</h2>
             <div class="text_box">
@@ -367,7 +442,27 @@
             </div>
         </div>
 
-    </div>
+    </div> -->
+    <footer class="footer">
+        <div class="footer_wrap">
+            <h2 class="t_logo">카페미뇽</h2>
+            <div class="footer_bottom">
+                <div class="fb_1">
+                    <p class="txt1_1"><strong>주식회사</strong>  :  굿베이크아이엔 &nbsp;&nbsp;&nbsp; </p>
+                    <p class="txt1_2"><strong>대표이사</strong>  :  전성희</p>
+                </div>
+                <div class="fb_2">
+                    <p class="txt1_3"><strong>전화번호 </strong> :  02-2634-8982&nbsp;&nbsp;&nbsp;</p>
+                    <p class="txt1_4"><strong>사업자등록번호</strong>  :  204-88-01725</p>
+                </div>
+                <address>주소 : 경기도 성남시 중원구 사기막골로 105번길 27, 3층 301~304호</address>
+                <div class="fb_3">
+                    <p class="txt2_1"><strong>CS CENTER</strong>  : 02-2634-8982&nbsp;&nbsp;&nbsp;</p>
+                    <p class="txt2_2"><strong>가맹문의</strong>  : 1544-6601</p>
+                </div>
+            </div>
+        </div>
+    </footer>
     
 </body>
 </html>

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="stylesheet" href="./css/reset.css">
-    <link rel="stylesheet" href="./css/menu.css">
+    <link rel="stylesheet" href="./css/menu1.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script type="text/javascript" src="http://code.jquery.com/jquery-3.6.1.min.js"></script>
     <link rel="stylesheet" type="text/css" href="slick-1.8.1/slick/slick.css"/>
@@ -33,42 +33,15 @@
                 });
             });
 
-            // //gnb
-            // $(".gnb_1 >ul").hide();
-
-            // $(".gnb>ul").mouseover(function () {
-            //     $(this).find("ul").stop().slideDown("fast");
-            // })
-            // $(".gnb>ul").mouseout(function () {
-            //     $(this).find("ul").stop().slideUp("fast");
-            // })
+            //gnb
             $(".gnb_1 >ul").hide();
 
-            $(".gnb1>ul").mouseover(function () {
+            $(".gnb>ul").mouseover(function () {
                 $(this).find("ul").stop().slideDown("fast");
             })
-            $(".gnb1>ul").mouseout(function () {
+            $(".gnb>ul").mouseout(function () {
                 $(this).find("ul").stop().slideUp("fast");
             })
-
-            // ===================================================
-            $(".gnb2 ul li ul").hide();
-            // ===================================================
-            $('.menu_icon').click(function() {
-                $('html').addClass('active');
-                $('.menu_icon').hide();
-                $('.menu_icon2').show();
-                $('.gnb_hide').show();
-            });
-
-            $('body').prepend('<div id="overlay">');
-
-            $('.menu_icon2').click(function() {
-                $('html').removeClass('active');
-                $('.menu_icon2').hide(); 
-                $('.menu_icon').show();
-                $('.gnb2>ul').hide();
-            });
 
             //클릭 이벤트
             $(".click_mv").mouseover(function () {
@@ -109,6 +82,15 @@
 					}
 				]
             });
+            $(".cont2_list > li").click(function(){
+                $(this).find(".modal-wrap").show();
+            });
+            $(".modal-close").click(function(){
+                console.log($(this).parent())
+                $(this).find('.modal-wrap').hide();
+            });
+            
+            
     })
 </script>
 </head>
@@ -116,8 +98,8 @@
     <header id="header" >
         <div class="head_wrap">
             <h1 class="logo" id="logo"><a href="./index.html">cafemignon</a></h1>
-                <div class="gnb1" id="gnb1">
-
+                <nav class="gnb" id="gnb">
+                    <span class="menu_icon"><a href="#"> menu</a></span>
                     <ul class="gnb_hide">
                         <li class="gnb_1 first"><a href="#">브랜드 소개</a>
                             <ul class="gnb_2">
@@ -149,42 +131,7 @@
                             </ul>
                         </li>
                     </ul>
-                </div>
-                <div class="gnb2" id="gnb2">
-                    <span class="menu_icon2"><a href="#">menu</a></span>
-                    <span class="menu_icon"><a href="#">menu</a></span>
-                    <ul class="gnb_hide">
-                        <li class="gnb_1 first"><a href="#">브랜드 소개</a>
-                            <ul class="gnb_2">
-                                <li><a href="#">회사소개</a></li>
-                                <li><a href="#">브랜드스토리</a></li>
-                                <li><a href="#">BI소개</a></li>
-                                <li><a href="#">제조사업</a></li>
-                            </ul>
-                        </li>
-                        <li class="gnb_1" ><a href="#">메뉴</a>
-                            <ul class="gnb_2">
-                                <li><a href="#">키쉬</a></li>
-                                <li><a href="#">커피</a></li>
-                                <li><a href="#">베버리지</a></li>
-                                <li><a href="#">티</a></li>
-                            </ul>
-                        </li>
-                        <li class="gnb_1" ><a href="#">프랜차이즈</a>
-                            <ul class="gnb_2">
-                                <li><a href="#">인테리어</a></li>
-                                <li><a href="#">경쟁력</a></li>
-                                <li><a href="#">개설비용</a></li>
-                                <li><a href="#">가맹문의</a></li>
-                            </ul>
-                        </li>
-                        <li class="gnb_1" ><a href="#">스토어</a>
-                            <ul class="gnb_2">
-                                <li><a href="#">매장찾기</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
+                </nav>
         </div>
     </header>
     <div class="main">
@@ -218,9 +165,35 @@
             <ul class="cont2_list container">
                 <li id="m1">
                     <img src="images/mn_1.png" alt="">
+                    <div class="modal-wrap">
+                        <p class="txt_1">치즈타르트</p>
+                        <p class="txt_2"> 60g <br> 1회 제공량 302kcal</p>
+                        <p class="txt_3">필라델피아 크림치즈를 듬뿍 사용하여 깊고 진한 맛의 크림치즈 타르트</p>
+                        <p class="txt_bt">
+                                포화지방 4.5g
+                                당류 8g
+                                나트륨 630g
+                                단백질 14g
+                                카페인 0.0g
+                            </p>
+                        <button class="modal-close" >닫기</button>
+                    </div>
                 </li>
                 <li id="m2">
                     <img src="images/mn_2.png" alt="">
+                    <div class="modal-wrap" >
+                            <p class="txt_1">리틀포레스트</p>
+                            <p class="txt_2"> 64g <br> 1회 제공량 344kcal</p>
+                            <p class="txt_3">크림 커스터드 위에 얇은 캐러멜 토핑을 얹 어 내는 크림브륄레키쉬</p>
+                            <p class="txt_bt">
+                                    포화지방 5.2g
+                                    당류 16g
+                                    나트륨 590g
+                                    단백질 13g
+                                    카페인 0.0g
+                                </p>
+                            <button class="modal-close" >닫기</button>
+                    </div>
                 </li>
                 <li id="m3">
                     <img src="images/mn_3.png" alt="">
@@ -246,8 +219,8 @@
                 <li><img src="images/mn_21.png" alt=""></li>
             </ul>
         </div>
-        <div class="modal-wrap">
-            <div class="m1">
+        <!-- <div class="modal-wrap">
+            <div id="m1">
                 <p class="txt_1">치즈타르트</p>
                 <p class="txt_2"> 60g <br> 1회 제공량 302kcal</p>
                 <p class="txt_3">필라델피아 크림치즈를 듬뿍 사용하여 깊고 진한 맛의 크림치즈 타르트</p>
@@ -261,22 +234,8 @@
                 <button class="modal-close" >닫기</button>
                 
             </div>
-        </div>
-        <div class="modal-wrap" >
-            <div class="m2">
-                <p class="txt_1">리틀포레스트</p>
-                <p class="txt_2"> 64g <br> 1회 제공량 344kcal</p>
-                <p class="txt_3">크림 커스터드 위에 얇은 캐러멜 토핑을 얹 어 내는 크림브륄레키쉬</p>
-                <p class="txt_bt">
-                        포화지방 5.2g
-                        당류 16g
-                        나트륨 590g
-                        단백질 13g
-                        카페인 0.0g
-                    </p>
-                <button class="modal-close" >닫기</button>
-            </div>
-        </div>
+        </div> -->
+
         <div class="modal-wrap" >
 
             <div class="m3">
@@ -309,50 +268,6 @@
             </div>
         </div>
 
-        <script>
-            $('.container > li').click(function(){
-                var id=$(this).attr("id");
-                var pop=$('.'+id,'.modal-wrap').parent();
-                // var pop=$('#'+id);
-                // var pop=$('#'+id,'.modal-wrap').parent();
-                // var pop=$('.modal-wrap');
-
-                var p= $(this).offset();
-                var top = p.top;
-                var left = p.left;
-                $(pop).css({"z-index":'80',"top":top,"left":left,"position":"absolute"}).show();
-
-                $('.'+id,'.modal-wrap').find('.modal-close').click(function(){
-                    var modalPop = $('.'+id,'.modal-wrap').parent();
-                    $(modalPop).hide();
-                });
-    
-            });
-
-            // $('.modal-close').click(function(){
-            //         var modalPop = $('.modal-wrap');
-            //         $(modalPop).hide();
-
-            // });
-
-
-            // $('.container > li').click(function(){
-            //     var pop=$('.modal-wrap');
-            //     var p= $(this).offset();
-            //     var top = p.top;
-            //     var left = p.left;    
-            //     $(pop).css({"z-index":'9999',"top":top,"left":left,"position":"absolute"}).show();
-    
-            // });
-            // $('.modal-close').click(function(){
-            //     var modalPop = $('.modal-wrap');
-            //     var modalBg = $('.modal-bg');
-            //     $(modalPop).hide();
-            //     $(modalBg).hide();
-    
-            // });
-            
-        </script>
 
         <div class="cont3">
             <h3>DELI</h3>
@@ -368,9 +283,11 @@
             </ul>
         </div>
 
+
+
     </div>
 
-    <!-- <div class="footer">
+    <div class="footer">
         <div class="footer_wrap">
             <h2 class="t_logo">카페미뇽</h2>
             <div class="text_box">
@@ -378,27 +295,7 @@
             </div>
         </div>
 
-    </div> -->
-    <footer class="footer">
-        <div class="footer_wrap">
-            <h2 class="t_logo">카페미뇽</h2>
-            <div class="footer_bottom">
-                <div class="fb_1">
-                    <p class="txt1_1"><strong>주식회사</strong>  :  굿베이크아이엔 &nbsp;&nbsp;&nbsp; </p>
-                    <p class="txt1_2"><strong>대표이사</strong>  :  전성희</p>
-                </div>
-                <div class="fb_2">
-                    <p class="txt1_3"><strong>전화번호 </strong> :  02-2634-8982&nbsp;&nbsp;&nbsp;</p>
-                    <p class="txt1_4"><strong>사업자등록번호</strong>  :  204-88-01725</p>
-                </div>
-                <address>주소 : 경기도 성남시 중원구 사기막골로 105번길 27, 3층 301~304호</address>
-                <div class="fb_3">
-                    <p class="txt2_1"><strong>CS CENTER</strong>  : 02-2634-8982&nbsp;&nbsp;&nbsp;</p>
-                    <p class="txt2_2"><strong>가맹문의</strong>  : 1544-6601</p>
-                </div>
-            </div>
-        </div>
-    </footer>
+    </div>
 
 
     
