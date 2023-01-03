@@ -136,10 +136,17 @@
                 slidesToScroll: 1,
                 autoplay: true,
                 autoplaySpeed: 2000,
+                fade: true,
+                infinite: true,
                 prevArrow: false,
-                nextArrow: false
+                nextArrow: false,
+                cssEase: 'linear'
                 // centerMode:true,
                 // centerPadding:'52px'
+                // customPaging: function customPaging(slider, i) {
+                //     return '<span>' + (i + 1) + '</span><span>  ' + slider.slideCount + '</span>';
+                // }
+   
             });
             
             $('.cont4_slick').slick({
@@ -203,7 +210,6 @@
         <div class="head_wrap">
             <h1 class="logo" id="logo"><a href="./index.html">cafemignon</a></h1>
                 <div class="gnb1" id="gnb1">
-
                     <ul class="gnb_hide">
                         <li class="gnb_1 first"><a href="#">브랜드 소개</a>
                             <ul class="gnb_2">
@@ -314,7 +320,7 @@
                 <ul class="tabs">
                     <li class="current" data-tab="tab-1"> 키쉬 </li>
                     <li data-tab="tab-2"> 커피</li>
-                    <li data-tab="tab-3"> 베버리지</li>
+                    <li data-tab="tab-3"><span class="small"> 베버리지</span></li>
                     <li data-tab="tab-4"> 티</li>
                 </ul>
         
