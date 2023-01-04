@@ -50,7 +50,7 @@
                 $('.gnb_hide').show();
             });
 
-            $('body').prepend('<div id="overlay">');
+            $('html').prepend('<div id="overlay">');
 
             $('.menu_icon2').click(function() {
                 $('html').removeClass('active');
@@ -124,6 +124,13 @@
             else if( window.innerWidth >= 300){
                 $('#mybook').booklet({
                     width:480,
+                    height:300,
+                    closed: true,
+                });
+            }
+            else if( window.innerWidth >= 100){
+                $('#mybook').booklet({
+                    width:380,
                     height:300,
                     closed: true,
                 });
