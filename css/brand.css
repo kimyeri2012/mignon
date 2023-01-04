@@ -9,6 +9,8 @@
         position: relative;
         z-index: 9999;
         background-color: rgb(255, 255, 255);
+        box-shadow: 0 4px 4px -4px black;
+
     }
     .head_wrap{
         height: 100px;
@@ -229,6 +231,7 @@
         position: relative;
         z-index: 9999;
         background-color: rgb(255, 255, 255);
+        box-shadow: 0 4px 4px -4px black;
     }
     .head_wrap{
         height: 80px;
@@ -512,6 +515,7 @@
         position: relative;
         z-index: 9999;
         background-color: rgb(255, 255, 255);
+        box-shadow: 0 4px 4px -4px black;
     }
     .head_wrap{
         height: 80px;
@@ -796,6 +800,7 @@
         position: relative;
         z-index: 9999;
         background-color: rgb(255, 255, 255);
+        box-shadow: 0 4px 4px -4px black;
     }
     .head_wrap{
         height: 66px;

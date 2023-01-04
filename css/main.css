@@ -30,6 +30,7 @@
         position: relative;
         margin: auto;
         border-collapse:collapse;
+        
     }
     .click_mv{
         width: 150px;
@@ -43,6 +44,8 @@
         -webkit-transition-timing-function:ease;
         transition-duration:0.4s;
         transition-timing-function:ease;
+        box-shadow: 0 4px 4px -4px black;
+
     }
 
     .logo{

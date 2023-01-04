@@ -2,6 +2,7 @@
     html{
         /* background-color: rgb(255, 252, 250); */
         background-color: rgb(255, 255, 255);
+        
     }
     header{
         width: 100%;
@@ -10,7 +11,9 @@
         z-index: 9999;
         position:fixed;
         background-color:rgb(255, 255, 255);
-        border-bottom: 1px solid #cbcbcb;
+        /* border-bottom: 1px solid #cbcbcb; */
+        box-shadow: 0 4px 4px -4px black;
+        
     }
     .head_wrap{
         height: 100px;
@@ -406,6 +409,7 @@
         z-index: 2;
         position:fixed;
         background-color:#fff;
+
         
     }
     .head_wrap{
@@ -413,6 +417,8 @@
         position: relative;
         margin: auto;
         border-collapse:collapse;
+        box-shadow: 0 4px 4px -4px black;
+
     }
     .click_mv{
         width: 150px;
@@ -589,7 +595,7 @@
         max-width: 1600px;
         height: 478px;
         background: url(../images/menu_main_2.jpg) no-repeat;
-        background-position:0 100px;
+        background-position:0 80px;
         background-size: contain;
         text-align: center;
         margin: auto;
@@ -609,7 +615,7 @@
         max-width: 800px;
         height: 50px;
         margin: auto;
-        margin-top: 60px;
+        margin-top: 36px;
         border: 1px solid #4b4b4b;
         border-collapse:collapse; 
     }
@@ -893,6 +899,8 @@
         z-index: 9999;
         position:fixed;
         background-color:#fff;
+        box-shadow: 0 4px 4px -4px black;
+
     }
     .head_wrap{
         height: 66px;
