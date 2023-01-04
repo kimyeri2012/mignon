@@ -13,6 +13,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Capriola&family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css"> 
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> 
+
     <title>키쉬</title>
   
     <script type="text/javascript">
@@ -190,11 +193,11 @@
     <div class="main">
         <div class="main_img">
             <p class="line">line</p>
-                <h2>QUICHE</h2>
+                <h2 data-aos="fade-up" data-aos-duration="1000">QUICHE</h2>
                 <!-- <p>Low reward dough and nutritious topping</p> -->
-                <p>
+                <p data-aos="fade-up" data-aos-duration="2000">
                     pleasing to the eyes and mouth dessert</p>
-                <ul class="sel">
+                <ul class="sel" data-aos="fade-up" data-aos-duration="2400">
                     <li class="sel_first"><a href="">키쉬</a></li>
                     <li><a href="">커피</a></li>
                     <li><a href="">베버리지</a></li>
@@ -202,9 +205,9 @@
                 </ul>
             
         </div>
-        <div class="cont1">
-            <h3>BEST</h3>
-            <ul class="cont1_slick">
+        <div class="cont1" >
+            <h3 data-aos="fade-up" data-aos-duration="1000">BEST</h3>
+            <ul class="cont1_slick" data-aos="fade-up" data-aos-duration="2000">
                 <li><a href=""><img src="images/mn_1.png" alt=""></a></li>
                 <li><a href=""><img src="images/mn_2.png" alt=""></a></li>
                 <li><a href=""><img src="images/mn_4.png" alt=""></a></li>
@@ -213,9 +216,9 @@
             </ul>
         </div>
 
-        <div class="cont2">
-            <h3>SWEET</h3>
-            <ul class="cont2_list container">
+        <div class="cont2" data-aos="fade-up" data-aos-duration="1000">
+            <h3 data-aos="fade-up" data-aos-duration="1000">SWEET</h3>
+            <ul class="cont2_list container" data-aos="fade-up" data-aos-duration="2000">
                 <li id="m1">
                     <img src="images/mn_1.png" alt="">
                 </li>
@@ -354,9 +357,9 @@
             
         </script>
 
-        <div class="cont3">
-            <h3>DELI</h3>
-            <ul class="cont2_list">
+        <div class="cont3" data-aos="fade-up" data-aos-duration="1000">
+            <h3 data-aos="fade-up" data-aos-duration="1000">DELI</h3>
+            <ul class="cont2_list" data-aos="fade-up" data-aos-duration="2000">
                 <li><a href=""><img src="images/dl_1.png" alt=""></a></li>
                 <li><a href=""><img src="images/dl_2.png" alt=""></a></li>
                 <li><a href=""><img src="images/dl_3.png" alt=""></a></li>
@@ -399,6 +402,9 @@
             </div>
         </div>
     </footer>
+    <script> 
+        AOS.init(); // 자바스크립트로 init()을 해야 동작한다.
+    </script>
 
 
     

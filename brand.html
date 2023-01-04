@@ -16,6 +16,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Capriola&family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css"> 
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> 
+
     <title>브랜드스토리</title>
 
     <script>
@@ -206,15 +209,15 @@
                 </div>
         </div>
     </header>
-    <div class="main">
-        <h2>Brand Story</h2>
+    <div class="main" data-aos="fade-up" data-aos-duration="1000">
+        <h2 data-aos="fade-up" data-aos-duration="1000">Brand Story</h2>
 
 
         <div id="mybook">
 
-            <div class="page p1">
+            <div class="page p1" >
                 <h3 class="logo">cafe mignon</h3>
-                <p class="p1_txt1">
+                <p class="p1_txt1" >
                     <br>
                     미뇽이의 소소한 이야기와 특별한 키쉬가 있는 곳 <br>
                     카페미뇽 입니다. <br>
@@ -296,6 +299,9 @@
             </div>
         </div>
     </footer>
+    <script> 
+        AOS.init(); // 자바스크립트로 init()을 해야 동작한다.
+    </script>
     
 </body>
 </html>

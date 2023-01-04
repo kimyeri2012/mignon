@@ -1,4 +1,19 @@
 @media screen and (min-width:1001px){ /*최대크기 넣어주기*/
+    /* [data-scroll]{
+        opacity: 0;
+        will-change: transform, scale, opacity;
+        transform: translateY(6rem) scale(0.93);
+        transition: all 1.5s cubic-bezier(0.165,0.84,0.44,1);
+    }
+    [data-scroll='in']{
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+    [data-scroll='out']{
+        opacity: 0;
+    } */
+    
+    
     html{
         background-color: rgb(255, 255, 255);
     }
@@ -487,7 +502,8 @@
     transition: all .5s ease-in-out;
     }
     #overlay {
-        background: rgb(222, 222, 222);
+        /* background: rgb(237, 237, 237); */
+        
         bottom: 0;
         height: 100%;
         left: 0;
