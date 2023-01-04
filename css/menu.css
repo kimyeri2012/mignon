@@ -152,7 +152,7 @@
     .cont1_slick .slick-prev{
         width: 20px;
         height: 49px;
-        background: url(../images/cont_left.png);
+        background: url(../images/cont_left.png) no-repeat;
         text-indent: -9999px;
         border: none;
         cursor: pointer;
@@ -165,7 +165,7 @@
     .cont1_slick .slick-next{
         width: 20px;
         height: 49px;
-        background: url(../images/cont_right.png);
+        background: url(../images/cont_right.png) no-repeat;
         text-indent: -9999px;
         border: none;
         cursor: pointer;
@@ -649,7 +649,7 @@
     .cont1_slick .slick-prev{
         width: 20px;
         height: 49px;
-        background: url(../images/cont_left.png);
+        background: url(../images/cont_left.png) no-repeat;
         text-indent: -9999px;
         border: none;
         cursor: pointer;
@@ -662,7 +662,7 @@
     .cont1_slick .slick-next{
         width: 20px;
         height: 49px;
-        background: url(../images/cont_right.png);
+        background: url(../images/cont_right.png) no-repeat;
         text-indent: -9999px;
         border: none;
         cursor: pointer;
@@ -1104,7 +1104,7 @@
     .cont1_slick .slick-prev{
         width: 20px;
         height: 49px;
-        background: url(../images/cont_left.png);
+        background: url(../images/cont_left.png) no-repeat;
         text-indent: -9999px;
         border: none;
         cursor: pointer;
@@ -1117,7 +1117,7 @@
     .cont1_slick .slick-next{
         width: 20px;
         height: 49px;
-        background: url(../images/cont_right.png);
+        background: url(../images/cont_right.png) no-repeat;
         text-indent: -9999px;
         border: none;
         cursor: pointer;
